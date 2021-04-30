@@ -1,0 +1,16 @@
+{
+  "name": "marketplace_microfrontend_recoil",
+  "private": true,
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "serve": "wsrun --parallel serve",
+    "start": "concurrently \"wsrun --parallel start\""
+  },
+  "workspaces": [
+    "modules/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "wsrun": "^5.2.0"
+  }
+}
